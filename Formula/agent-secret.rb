@@ -5,21 +5,21 @@
 class AgentSecret < Formula
   desc "A secure local secret vault for developers"
   homepage "https://github.com/onurkerem/agent-secret"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/onurkerem/agent-secret/releases/download/v1.0.0/agent-secret_1.0.0_darwin_amd64.tar.gz"
-      sha256 "91db2d965e6548c4366ca86ab31fbc573f7f696540b370afe6bbc8ff1c0f1e83"
+      url "https://github.com/onurkerem/agent-secret/releases/download/v1.1.0/agent-secret_1.1.0_darwin_amd64.tar.gz"
+      sha256 "5cd5710bae42576fa0f1f5620c1a3917092218df5ff5c5d3cfdf627715c6e1a2"
 
       def install
         bin.install "agent-secret"
       end
     end
     on_arm do
-      url "https://github.com/onurkerem/agent-secret/releases/download/v1.0.0/agent-secret_1.0.0_darwin_arm64.tar.gz"
-      sha256 "670dd0b4728cad6b4b5abf16a284f7e849e2b80e0d548c970d6c59c95ca78b84"
+      url "https://github.com/onurkerem/agent-secret/releases/download/v1.1.0/agent-secret_1.1.0_darwin_arm64.tar.gz"
+      sha256 "de7ffdf525a336f6a5bff4bc70b1a8aae41aec24d3cce8106f360419895fd0fe"
 
       def install
         bin.install "agent-secret"
@@ -30,8 +30,8 @@ class AgentSecret < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onurkerem/agent-secret/releases/download/v1.0.0/agent-secret_1.0.0_linux_amd64.tar.gz"
-        sha256 "8afe1fe59b4fb9d5b7c070dc5753dde52f0adc416ea972448819097c14344cb4"
+        url "https://github.com/onurkerem/agent-secret/releases/download/v1.1.0/agent-secret_1.1.0_linux_amd64.tar.gz"
+        sha256 "290eace9bd59e173f35f6f4656c6561b2f5704584f4c589215294734d4da377a"
 
         def install
           bin.install "agent-secret"
@@ -40,8 +40,8 @@ class AgentSecret < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/onurkerem/agent-secret/releases/download/v1.0.0/agent-secret_1.0.0_linux_arm64.tar.gz"
-        sha256 "41673da8c7a9926011edb6a4efc7c433680a01360a2693b4d7a850be958c9710"
+        url "https://github.com/onurkerem/agent-secret/releases/download/v1.1.0/agent-secret_1.1.0_linux_arm64.tar.gz"
+        sha256 "354380bbebf7f653e5c4164814b8907d25964247ec312364f68825a3316d62bf"
 
         def install
           bin.install "agent-secret"
